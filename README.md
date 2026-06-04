@@ -1,60 +1,46 @@
-# ATM_SIMULATOR
-A Console-based ATM system in C++. Features file-based authentication, balance checking, deposit/withdrawal logs, and transaction history.
+# Smart ATM Simulator
 
-This is my first ATM Simulator project as a 1st year CSE student.  
-It is a simple console-based project made to understand the basic working of an ATM machine.
+A simple, console-based ATM machine simulation application built using C++. This project was created to demonstrate foundational coding principles, focusing heavily on Object-Oriented Programming (OOP) and persistent file-handling systems.
 
-# Project Description
-The ATM Simulator helps users perform basic banking tasks such as:
-- Checking account balance
-- Depositing money
-- Withdrawing money
-- Viewing transaction history
-- Exiting the system safely
+---
 
-This project was created for learning programming basics, logic building, and file handling concepts.
+## 🚀 Key Features
 
-# Features
-- Simple and easy to use menu
-- Balance checking
-- Deposit and withdrawal system
-- Transaction history
-- File handling for saving data
-- Beginner-friendly C++ project
+▫️ PIN Security: Authenticates users via a 4-digit PIN and automatically blocks the session after 5 consecutive incorrect attempts.
+▫️ Balance Inquiry: Fetches and displays the user's real-time account balance directly from a data file.
+▫️ Cash Deposits: Allows users to add money to their account, instantly updating their total balance.
+▫️ Cash Withdrawals: Validates user requests against their current balance to prevent overdrafts before dispensing cash.
+▫️ Live History Log: Maintains a persistent ledger tracking the exact date and time of every transaction using the `<chrono>` library.
 
-# Technologies Used
-- C++
-- File Handling
-- Console Application
+## 📁 Project Structure & Code Files
 
-# How to Run
-1. Clone or download this repository.
-2. Make sure the `account.txt` file is in the same folder as the executable file (`.exe`) or source code.
-3. Open the project in your C++ compiler or IDE.
-4. Compile the source code (if needed).
-5. Run the program.
-6. Follow the menu options shown on the screen.
+▫️ atm_simulator.cpp: The core source code containing the logic, classes, and menu operations for the application.
+▫️account.txt: Acts as a mock database storing sensitive customer data including Account Numbers, PINs, and current balances.
+▫️history.txt: A permanent record file where successful transactions are appended with real-time timestamps.
+▫️temp.txt: A temporary placeholder file utilized during deposits or withdrawals to securely update records without corrupting data.
 
-### Important
-The program uses `account.txt` to store account information and transaction data.  
-If the file is missing or placed in a different location, the program may not work correctly. Always keep `account.txt` in the same directory as the executable file.
+## ⚙️ How to Setup and Run
 
-# Project Purpose
-The main purpose of this project is to practice:
-- C++ programming
-- Functions
-- Conditions
-- Loops
-- File handling
-- Problem solving
+# 1. Prerequisites
+Make sure you have a C++ compiler installed on your system (like GCC/MinGW) or an Integrated Development Environment (IDE) such as VS Code, Code::Blocks, or Dev-C++.
 
-# Future Improvements
-- Add user login system
-- Add PIN verification
-- Add account creation
-- Improve the user interface
-- Store more transaction details
+# 2. Prepare the Database File
+Before running the code, create a text file named account.txt in the exact same directory as your atm_simulator.cpp file. 
 
-# Author
-Tanmoy Sarker, Created by a 1st year CSE student.
-Thank you for visiting my project!
+Add a header line and at least one sample user data account into account.txt using the format (AccountNumber<tab>PIN<tab>Balance). 
+For example:
+Acc    Password   Balance
+1234   1122      5000.50
+
+## Learning Objectives
+
+This project helped me practice:
+▫️ C++ Programming Basics
+▫️ Functions
+▫️ Loops and Conditions
+▫️ File Handling
+▫️ Problem Solving
+▫️ Menu-Driven Programs
+
+## Author
+Tanmoy Sarker, First-Year CSE Student
