@@ -4,7 +4,7 @@ A simple,console-based ATM machine simulation application built using C++.This p
 
 ## 🚀 Key Features
 
-▫️ PIN Security: Authenticates users via a 4-digit PIN and automatically blocks the session after 5 consecutive incorrect attempts.
+**` PIN Security:`** Authenticates users via a 4-digit PIN and automatically blocks the session after 5 consecutive incorrect attempts.
 ▫️ Balance Inquiry: Fetches and displays the user's real-time account balance directly from a data file.
 ▫️ Cash Deposits: Allows users to add money to their account, instantly updating their total balance.
 ▫️ Cash Withdrawals: Validates user requests against their current balance to prevent overdrafts before dispensing cash.
