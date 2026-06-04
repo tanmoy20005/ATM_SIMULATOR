@@ -5,17 +5,17 @@ A simple,console-based ATM machine simulation application built using C++.This p
 ## 🚀 Key Features
 
 **` PIN Security:`** Authenticates users via a 4-digit PIN and automatically blocks the session after 5 consecutive incorrect attempts.
-▫️ Balance Inquiry: Fetches and displays the user's real-time account balance directly from a data file.
-▫️ Cash Deposits: Allows users to add money to their account, instantly updating their total balance.
-▫️ Cash Withdrawals: Validates user requests against their current balance to prevent overdrafts before dispensing cash.
-▫️ Live History Log: Maintains a persistent ledger tracking the exact date and time of every transaction using the `<chrono>` library.
+**`Balance Inquiry:`** Fetches and displays the user's real-time account balance directly from a data file.
+**`Cash Deposits:`** Allows users to add money to their account, instantly updating their total balance.
+**`Cash Withdrawals:`** Validates user requests against their current balance to prevent overdrafts before dispensing cash.
+**`Live History Log:`** Maintains a persistent ledger tracking the exact date and time of every transaction using the `<chrono>` library.
 
 ## 📁 Project Structure & Code Files
 
-▫️ atm_simulator.cpp: The core source code containing the logic, classes, and menu operations for the application.
-▫️account.txt: Acts as a mock database storing sensitive customer data including Account Numbers, PINs, and current balances.
-▫️history.txt: A permanent record file where successful transactions are appended with real-time timestamps.
-▫️temp.txt: A temporary placeholder file utilized during deposits or withdrawals to securely update records without corrupting data.
+**`atm_simulator.cpp:`** The core source code containing the logic, classes, and menu operations for the application.
+**`account.txt:`** Acts as a mock database storing sensitive customer data including Account Numbers, PINs, and current balances.
+**`history.txt:`** A permanent record file where successful transactions are appended with real-time timestamps.
+**`temp.txt:`** A temporary placeholder file utilized during deposits or withdrawals to securely update records without corrupting data.
 
 ## ⚙️ How to Setup and Run
 
