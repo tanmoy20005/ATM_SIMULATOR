@@ -1,8 +1,6 @@
 # Smart ATM Simulator
 
-A simple, console-based ATM machine simulation application built using C++. This project was created to demonstrate foundational coding principles, focusing heavily on Object-Oriented Programming (OOP) and persistent file-handling systems.
-
----
+A simple,console-based ATM machine simulation application built using C++.This project was created to demonstrate foundational coding principles,focusing heavily on Object-Oriented Programming (OOP) and persistent file-handling systems.
 
 ## 🚀 Key Features
 
